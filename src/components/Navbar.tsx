@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,9 +22,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center">
-            <div className="w-3 h-3 rounded-sm bg-indigo-400" />
-          </div>
+          <Image src="/logo.png" alt="DataPulse" width={28} height={28} />
           <span className="text-[15px] font-semibold tracking-tight text-white">DataPulse</span>
         </div>
 

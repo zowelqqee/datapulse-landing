@@ -1,11 +1,11 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/[0.06] py-12 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-2">
-          <div className="w-6 h-6 rounded-md bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center">
-            <div className="w-2.5 h-2.5 rounded-sm bg-indigo-400" />
-          </div>
+          <Image src="/logo.png" alt="DataPulse" width={24} height={24} />
           <span className="text-sm font-semibold text-white/70">DataPulse</span>
         </div>
 
